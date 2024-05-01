@@ -11,7 +11,7 @@
   <h3 align="center">UnityCodeCommenter</h3>
 
   <p align="center">
-    He can make comments on your code style
+    He can make comments on your code style in Unity game engine projects
   </p>
 </div>
 
@@ -20,7 +20,10 @@
 ## About The Project
 ![Product Name Screen Shot][product-screenshot]
 
-For each pull request this workflow will generate a solution file for your Unity project, run reSharper Inspect code and provide it's output as PR comments. Everything runs on GitHub runner.
+* This project makes use of [resharper_inspectcode](https://github.com/muno92/resharper_inspectcode) action convenient to use for Unity repos that require solution files generation.
+* For each pull request this workflow will generate a solution file for your Unity project, run reSharper Inspect code and provide it's output as PR comments. 
+* Everything runs on GitHub runner (for free).
+
 
 <!-- GETTING STARTED -->
 ## Demo
@@ -31,7 +34,7 @@ For each pull request this workflow will generate a solution file for your Unity
 
 ## Getting Started
 
-1. Put `check_code_style.yaml` to your repo `.github/workflows`  
+1. Put [`check_code_style.yaml`](https://github.com/kkostenkov/unity-code-commenter/blob/master/.github/workflows/check-code-style.yml) to your repo `.github/workflows`  
 1. Open `check_code_style.yaml` and modify `PROJECT_NAME`    
 (It's the name of a directory of your Unity project) 
 1. Modify `PROJECT_PATH`  
@@ -43,7 +46,7 @@ For each pull request this workflow will generate a solution file for your Unity
 ### Prerequisites
 
 Unity Pro+ license.  
-Unity Personal license activation is not supported currently.
+Unity Personal license activation details are [here](https://game.ci/docs/github/activation/).
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -71,6 +74,7 @@ Kirill Kostenkov - [contacts](https://kkostenkov.github.io)
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
+* [Best Readme template](https://github.com/othneildrew/Best-README-Template)
 * [ReSharper CLI InspectCode GitHub action](https://github.com/muno92/resharper_inspectcode)
 * [GameCI Unity builder](https://github.com/game-ci/unity-builder)
 
